@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="arebot_correction2" type="multiplier_radius" name="multiplier_radius" output="screen">
+        <param name="path" value="$(find arebot_correction2)/multiplier.txt"/>
+    </node>
+
+</launch>

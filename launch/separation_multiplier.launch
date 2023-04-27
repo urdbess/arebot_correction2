@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="arebot_correction2" type="multiplier_separation" name="multiplier_separation" output="screen">
+        <param name="path" value="$(find arebot_correction2)/multiplier.txt"/>
+    </node>
+    <node pkg="arebot_correction2" type="pub_actual_angular" name="pub_actual_angular" output="screen">
+        <param name="times" value = "30"/>
+    </node>
+
+</launch>
